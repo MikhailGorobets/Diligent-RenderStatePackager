@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include src/diligent_drsn_packager/bin *
+include src/diligent_drsn_packager/diligentcore_sha.txt

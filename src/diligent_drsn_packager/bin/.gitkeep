@@ -1,0 +1,2 @@
+# Placeholder so the package's bin/ directory exists in the source tree.
+# The Diligent-RenderStatePackager executable is staged here at build time by CI / bootstrap.sh.

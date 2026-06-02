@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Build / packaging artifacts
+/build/
+/dist/
+*.egg-info/
+__pycache__/
+*.pyc
+
+# Native binary + provenance staged into the package at build time (not source)
+/src/diligent_drsn_packager/bin/*
+!/src/diligent_drsn_packager/bin/.gitkeep
+/src/diligent_drsn_packager/diligentcore_sha.txt

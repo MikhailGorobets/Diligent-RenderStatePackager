@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diligent-drsn-packager"
+version = "0.1.0"
+description = "Prebuilt Diligent Engine RenderStatePackager CLI, distributed as a per-platform binary wheel"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Mikhail Gorobets" }]
+keywords = ["diligent", "graphics", "render-state", "packager", "shader", "pipeline-state"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: C++",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Topic :: Multimedia :: Graphics",
+]
+
+[project.scripts]
+diligent-drsn-packager = "diligent_drsn_packager.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/MikhailGorobets/Diligent-RenderStatePackager"
+Source = "https://github.com/MikhailGorobets/Diligent-RenderStatePackager"
