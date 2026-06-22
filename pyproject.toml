@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=64", "wheel"]
+requires = ["setuptools>=64", "setuptools_scm>=8", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "diligent-drsn-packager"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Prebuilt Diligent Engine RenderStatePackager CLI, distributed as a per-platform binary wheel"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -28,3 +28,6 @@ diligent-drsn-packager = "diligent_drsn_packager.__main__:main"
 [project.urls]
 Homepage = "https://github.com/MikhailGorobets/Diligent-RenderStatePackager"
 Source = "https://github.com/MikhailGorobets/Diligent-RenderStatePackager"
+
+# Version is derived from the git tag (e.g. v0.1.1 -> 0.1.1); release = push a tag.
+[tool.setuptools_scm]
