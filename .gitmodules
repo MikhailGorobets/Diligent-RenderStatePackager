@@ -1,8 +1,8 @@
 [submodule "DiligentCore"]
 	path = DiligentCore
 	url = https://github.com/MikhailGorobets/DiligentCore.git
-	branch = upgrade_dawn
+	branch = master
 [submodule "DiligentTools"]
 	path = DiligentTools
 	url = https://github.com/MikhailGorobets/DiligentTools.git
-	branch = dev
+	branch = master
